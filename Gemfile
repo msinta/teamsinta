@@ -61,3 +61,7 @@ group :development do
   # gem "spring"
 end
 
+gem 'devise'
+gem 'omniauth-google-oauth2'
+gem 'omniauth'
+gem 'omniauth-rails_csrf_protection'
