@@ -7,6 +7,12 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def google_oauth2
     user = User.fron_omniauth(auth)
+
+    if user.present?
+      sign_out_all_scopes
+      flash[:success] = t 'devise.omniauth_callbacks.success', kind: 'Google'
+    end
+
   end
   # You should also create an action method in this controller like this:
   # def twitter
