@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'components/index'
-  root 'pages#home'
+  # get 'components/index'
+  root 'components#index'
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions',
