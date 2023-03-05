@@ -6,7 +6,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
 
   def google_oauth2
-    user = User.fron_omniauth(auth)
+    user = User.from_omniauth(auth)
 
     if user.present?
       sign_out_all_scopes
@@ -48,6 +48,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   private
 
   def auth
-    @auth || request.end['omniauth.auth']
+    @auth || request.env['omniauth.auth']
   end
 end
