@@ -1,18 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import ExampleComponent from "./exampleComponent";
-
-interface AppProps {
-  arg: string;
-}
-
-const App = ({ arg }: AppProps) => {
-  return (
-    <div>
-      <ExampleComponent arg="This is the example component" />
-    </div>
-  );
-};
+import App from "../components/app";
 
 document.addEventListener("DOMContentLoaded", () => {
   const rootEl = document.getElementById("root");
