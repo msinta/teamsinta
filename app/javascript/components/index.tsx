@@ -4,5 +4,5 @@ import App from "../components/app";
 
 document.addEventListener("DOMContentLoaded", () => {
   const rootEl = document.getElementById("root");
-  ReactDOM.render(<App arg="Rails 7 with ESBuild/React" />, rootEl);
+  ReactDOM.render(<App />, rootEl);
 });

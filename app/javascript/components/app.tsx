@@ -1,11 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-interface AppProps {
-  arg: string;
-}
-
-const App = ({ arg }: AppProps) => {
+const App = () => {
   return <div>TEST</div>;
 };
 
