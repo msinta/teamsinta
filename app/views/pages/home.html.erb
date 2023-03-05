@@ -3,5 +3,12 @@
 
 
 <%if current_user%>
+
+<h2><% current_user_email %></h2>
+
+<%= link_to "Edit Account", edit_user_registration_path%>
+<% button_to "Logout", destroy_user_session_path, data: {turbo: "false"}, method: :delete %>
 <% else %>
+
+
 <% end %>
