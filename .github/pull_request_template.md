@@ -7,7 +7,6 @@
 - When you've submitted the PR, on your PR page you can tag someone to review on the right hand side.
 - If possible, on your notion ticket please add the link to this PR on the section titled 'PR Link'
 - Finally, please message on slack the person you've tagged for review to let them know!
-- Have a great day - Any questions please contact Norah, Russell, Yu or Allen.
 
 - Please delete all the text above before you submit.
 -->
